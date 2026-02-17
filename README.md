@@ -43,14 +43,17 @@ Adjustments are required for other tumor types.
 
 ```bash
 python3 scripts/preprocessamento.py
+```
 
 ### 2. Train Logistic Regression Model
 ```bash
 python3 scripts/classificador.py
+```
 
 ### 3. Train Perceptron
 ```bash
 python3 scripts/perceptron_code.py
+```
 
 ### 4. Run scikit-learn Examples
 ```bash
@@ -58,11 +61,12 @@ python3 scripts/exemplo_perceptron_sklearn.py
 python3 scripts/exemplo_ada_sklearn.py
 python3 scripts/exemplo_log_sklearn.py
 python3 scripts/exemplo_svm_sklearn.py
+```
 
 ### 5. Interactive Notebook
 ```bash
 jupyter notebook
-
+```
 
 Open the notebook inside the notebooks/ directory and execute interactively.
 
