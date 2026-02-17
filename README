@@ -1,46 +1,79 @@
-# Execute everything from base
+# Applied Machine Learning for Transcriptomic Data
 
-### To download the Xena Data go to
+This repository contains materials developed for a hands-on workshop introducing machine learning concepts to biomedical researchers, with practical applications in cancer transcriptomic data.
 
-# https://xenabrowser.net/datapages/?hub=https://tcga.xenahubs.net:443
+The workshop was designed to bridge foundational ML theory and real-world genomic datasets, enabling scientists to understand and implement supervised learning models in biological contexts.
 
-## and select the tumor types of your interest
+---
 
-### To preprocess the Xena Data ###
-### Currently only for Gastro samples ###
-### If changes are wanted, it needs to be manually changed ###
+## Overview
 
-# python3 scripts/preprocessamento.py
+Topics covered:
 
-### To execute the logistic regression ###
-### Currently only works as a logistic regression and Gastro samples ###
-### If changes are wanted, it needs to be manually changed ###
+- Logistic Regression
+- Perceptron
+- Support Vector Machines (SVM)
+- AdaBoost
+- Model evaluation (confusion matrix, performance metrics)
+- Decision boundary visualization
+- Concepts of overfitting and generalization
 
-# python3 scripts/classificador.py
+All examples are applied to gene expression data derived from TCGA via the UCSC Xena platform.
 
-### To execute the perceptron ###
+---
 
-# python3 scripts/perceptron_code.py
+## Data Source
 
-### To execute the examples ###
+Transcriptomic data were obtained from:
 
-# python3 scripts/exemplo_perceptron_sklearn.py
-# python3 scripts/exemplo_ada_sklearn.py
-# python3 scripts/exemplo_log_sklearn.py
-# python3 scripts/exemplo_svm_sklearn.py
+UCSC Xena Browser  
+https://xenabrowser.net
 
-### To execute the Hands-On Machine Learning file ###
-### First enter the jupyter notebook ###
-### It will execute in your browser ###
-### In there you can find the file, and it will execute ###
+Users can select tumor types of interest from the TCGA hub.
 
-# jupyter notebok
+⚠️ Current preprocessing scripts are configured for Gastrointestinal tumor samples.  
+Adjustments are required for other tumor types.
 
-### The following are support scrips, they don't do anything when executed ###
+---
 
-# scripts/plot_decision_surface.py
-# scripts/plot_confusion.py
 
-### All data is in the data folder ###
-### All figures are in the figures folder ###
-### All scripts are in the scripts folder ###
+## Running the Analysis
+
+### 1. Preprocess Data
+
+```bash
+python3 scripts/preprocessamento.py
+
+### 2. Train Logistic Regression Model
+```bash
+python3 scripts/classificador.py
+
+### 3. Train Perceptron
+```bash
+python3 scripts/perceptron_code.py
+
+### 4. Run scikit-learn Examples
+```bash
+python3 scripts/exemplo_perceptron_sklearn.py
+python3 scripts/exemplo_ada_sklearn.py
+python3 scripts/exemplo_log_sklearn.py
+python3 scripts/exemplo_svm_sklearn.py
+
+### 5. Interactive Notebook
+```bash
+jupyter notebook
+
+
+Open the notebook inside the notebooks/ directory and execute interactively.
+
+## Educational Objective
+
+This workshop was designed to:
+- Provide intuition behind linear classifiers
+- Demonstrate model behavior in high-dimensional biological data
+- Introduce supervised learning workflows
+- Promote computational literacy in genomics research environments
+
+Notes
+
+This repository reflects an educational initiative within a research laboratory setting and is intended for instructional and demonstration purposes.
